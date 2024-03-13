@@ -186,7 +186,14 @@
 		"search_input_placeholder": "Search by addresses, transactions, and blocks",
 		"title": "Home",
 		"transactions": "@:transactions",
-		"validators": "@:validators"
+		"validators": "@:validators",
+		"next_mainnet_nodes": "NEXT Mainnet Nodes",
+		"latest_blocks": "Latest Blocks",
+		"latest_transactions": "Latest Transactions",
+		"view_all_transactions": "View all transactions",
+		"daily_transactions": "Daily Transactions",
+		"total_next_burned": "Total NEXT Burned",
+		"vault": "The Ecosystem Vault"
 	},
 	"view_not_found": {
 		"link_title": "@:back_to_home",

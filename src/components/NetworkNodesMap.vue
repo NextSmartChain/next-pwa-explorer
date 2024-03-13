@@ -19,6 +19,8 @@ import gql from "graphql-tag";
 import {COUNTRIES_BY_NAME} from "@/components/WorldMap/countries_by_name.js";
 import {formatNumberByLocale} from "@/filters.js";
 import {tmpResponse} from "@/components/WorldMap/tmp-response.js";
+import {clamp} from "@/utils/index.js";
+
 export default {
   name: "NetworkNodesMap",
   components: {WorldMap},
@@ -26,6 +28,7 @@ export default {
     return {
       networkNodes: [],
       totalCount: 0,
+      animationSpeed: 1000,
     }
   },
   computed: {
@@ -43,8 +46,8 @@ export default {
   methods: {
     async loadNetworkNodes() {
       const countries = COUNTRIES_BY_NAME();
-      const nodes = await this.fetchNetworkNodes();
-      // const nodes = await this.getTMPNetworkNodes();
+      //const nodes = await this.fetchNetworkNodes(); // Production
+      const nodes = await this.getTMPNetworkNodes(); // Development
       const networkNodes = [];
       nodes.forEach(node => {
         const country = countries[node.region];
@@ -64,6 +67,7 @@ export default {
         }
       });
       this.networkNodes = networkNodes;
+      this.animateNetworkNodes();
     },
     async fetchNetworkNodes(level = 'COUNTRY') {
       const data = await this.$apollo.query({
@@ -97,16 +101,37 @@ export default {
       this.totalCount = this.formatNumber(data.data.networkNodesAggregated.totalCount);
       return data.data.networkNodesAggregated.groups || [];
     },
+    animateNetworkNodes() {
+      // this.startAnimation(this.networkNodes[0]);
+      this.networkNodes.forEach(node => {
+        this.startAnimation(node);
+      })
+    },
+    startAnimation(networkNode) {
+      let waitMax = 6500;
+      let wait = Math.floor(((waitMax - networkNode.count * 2.8) / waitMax) * waitMax);
+      wait = clamp(wait, 500, waitMax);
+      setTimeout(() => {
+        this.playAnimation(networkNode);
+      }, Math.floor(Math.random() * wait) + 500);
+    },
+    playAnimation(networkNode) {
+      this.$set(networkNode, '_animation', `glow ${this.animationSpeed}ms ease-out`);
+      setTimeout(() => {
+        this.stopAnimation(networkNode);
+        this.startAnimation(networkNode);
+      }, this.animationSpeed);
+    },
+    stopAnimation(networkNode) {
+      this.$set(networkNode, '_animation', null);
+    },
+
     getNodeSize(node) {
       const maxSize = 44;
       const minSize = 10;
       const maxCount = 360;
       let size = (node.count / maxCount) * maxSize;
-      if (size < minSize) {
-        size = minSize;
-      } else if (size > maxSize) {
-        size = maxSize;
-      }
+      size = clamp(size, minSize, maxSize)
       size = Math.floor(size);
       return size;
     },
@@ -114,6 +139,7 @@ export default {
       return {
         width: `${node._size}px`,
         height: `${node._size}px`,
+        animation: node._animation,
       }
     },
     formatNumber(number) {
@@ -125,7 +151,19 @@ export default {
 
 <style lang="scss">
 .networknodesmap {
-  --networknodesmap-node-color: rgba(99, 171, 243, 0.8);
+  --networknodesmap-node-color-rgb: 99, 171, 243;
+  --networknodesmap-node-color: rgba(var(--networknodesmap-node-color-rgb), 0.8);
+
+  @keyframes glow {
+    0% {
+      outline-width: 0;
+    }
+    100% {
+      outline-width: 10px;
+      outline-color: transparent;
+    }
+  }
+
   &_node {
     border-radius: 50%;
     width: 16px;
@@ -138,6 +176,7 @@ export default {
     justify-content: center;
     font-size: 12px;
     overflow: hidden;
+    outline: 0 solid rgba(var(--networknodesmap-node-color-rgb), 0.8);
     transition: all 250ms ease;
     > span {
       opacity: 0;
@@ -163,6 +202,20 @@ export default {
     font-weight: normal;
     text-align: center;
     font-size: 64px;
+
+    .nodes_label {
+      color: $light-gray-color;
+      font-size: 1.125rem;
+      font-weight: bold;
+    }
+  }
+}
+
+@include media-max($bp-medium) {
+  .networknodesmap {
+    h3 {
+      font-size: 40px;
+    }
   }
 }
 </style>

@@ -65,7 +65,7 @@
         <div class="row row-2-cols-lg equal-height mat-5">
             <div class="col">
                 <f-card class="half-padding">
-                    <h2 class="h3">Latest Blocks</h2>
+                    <h2 class="h3">{{ $t('view_home.latest_blocks') }}</h2>
                     <home-block-list :items="blocksData" :hidden-columns="['time', 'fee']" :items-per-page="10" class="home-table" />
                     <router-link :to="{name: 'blocks'}" class="btn secondary" style="width: 100%;">
                         View all blocks
@@ -74,10 +74,10 @@
             </div>
             <div class="col">
                 <f-card class="half-padding">
-                    <h2 class="h3">Latest Transactions</h2>
+                    <h2 class="h3">{{ $t('view_home.latest_transactions') }}</h2>
                     <home-transaction-list :items="blocksData" :hidden-columns="['gasUsed']" :items-per-page="5" class="home-table" />
                     <router-link :to="{name: 'transactions'}" class="btn secondary" style="width: 100%;">
-                        View all transactions
+                      {{ $t('view_home.view_all_transactions') }}
                     </router-link>
                 </f-card>
             </div>
@@ -86,7 +86,7 @@
             <div class="col">
                 <f-card class="half-padding">
                     <div class="txvolumes_label">
-                        <h2 class="h3" id="txv">Daily Transactions</h2>
+                        <h2 class="h3" id="txv">{{ $t('view_home.daily_transactions') }}</h2>
                         <f-listbox v-model="txVolumesResolution" :focus-item-on-focus="true" :data="txVolumesResolutions" labeled-by="txv" horizontal />
                     </div>
                     <transaction-volumes :resolution="txVolumesResolution" />
@@ -96,7 +96,11 @@
       <div v-if="showNetworkNodesMap" class="row mat-5">
         <div class="col">
           <f-card class="half-padding">
-            <h2 class="h3">Network Nodes</h2>
+            <h2 class="h3">{{ $t('view_home.next_mainnet_nodes') }}
+            <f-info show-on-hover button-tooltip="" window-class="light" window-style="max-width: 350px;">
+              All RPC, read-only and validator nodes synced to Next Smart Chain.
+            </f-info>
+            </h2>
             <network-nodes-map />
           </f-card>
         </div>
@@ -128,12 +132,14 @@
     //import BurnedFTM from "@/components/BurnedFTM.vue";
     import appConfig from '../../app.config.js';
     import NetworkNodesMap from "@/components/NetworkNodesMap.vue";
+    import FInfo from "@/components/core/FInfo/FInfo.vue";
 
     export default {
         mixins: [pollingMixin],
 
         components: {
             //BurnedFTM,
+            FInfo,
             FListbox,
             TransactionVolumes,
             HomeTransactionList,
@@ -275,6 +281,10 @@
                 padding-inline-end: 16px;
             }
         }
+      .f-info {
+        margin-top: -2px;
+        margin-inline-start: 8px;
+      }
     }
 
     @include media-max($bp-menu) {
