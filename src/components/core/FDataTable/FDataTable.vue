@@ -359,7 +359,8 @@ export default {
             dCss: '',
             dPagination: {},
             dVisibleColumnsNum: 0,
-            // dItems: this.items
+            dColumns: [...this.columns],
+            dItems: [...this.items],
         };
     },
 
@@ -659,9 +660,9 @@ export default {
             if (_column && _column.sortFunc) {
                 const sortByCol = this._sortByCol;
 
-                if (sortByCol > -1 && sortByCol !== _column._index) {
-                    this.columns[sortByCol].sortDir = '';
-                }
+              if (sortByCol > -1 && sortByCol !== _column._index) {
+                this.$set(this.dColumns[sortByCol], 'sortDir', ''); // Use $set to mutate the local copy
+              }
 
                 if (_sortDir) {
                     _column.sortDir = _sortDir;
@@ -686,7 +687,7 @@ export default {
                     this.saveSettings({ ...this._settings, sorting});
                 }
 
-                this.items.sort(_column.sortFunc(_column.itemProp || _column.name, _column.sortDir));
+                this.dItems.sort(_column.sortFunc(_column.itemProp || _column.name, _column.sortDir));
             }
         },
 

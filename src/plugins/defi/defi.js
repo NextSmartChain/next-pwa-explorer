@@ -627,7 +627,6 @@ export class DeFi {
                               priceDecimals
                               totalSupply
                               isActive
-                              canWrapFTM
                               canDeposit
                               canMint
                               canBorrow
@@ -649,7 +648,6 @@ export class DeFi {
                               priceDecimals
                               totalSupply
                               isActive
-                              canWrapFTM
                               canDeposit
                               canMint
                               canBorrow
@@ -670,7 +668,6 @@ export class DeFi {
         if (filterTokens.length > 0) {
             defiTokens = defiTokens.filter(this.filterTokensBySymbol);
         }
-        // console.log(defiTokens);
 
         let tokens = [];
 

@@ -136,7 +136,7 @@
                                 </template>
                             </template>
                 -->
-
+              <!-- eslint-disable-next-line vue/no-unused-vars -->
                 <template #subrow="{ item, columns, visibleColumnsNum, style, tabindex, dtItemId, mobileView }">
                     <template v-if="!mobileView">
                         <tr

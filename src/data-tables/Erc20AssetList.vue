@@ -6,6 +6,7 @@
             first-m-v-column-width="6"
             class="f-data-table-body-bg-color"
         >
+           <!-- eslint-disable-next-line vue/no-unused-vars -->
             <template v-slot:column-asset="{ value, item, column }">
                 <div v-if="column" class="row no-collapse no-vert-col-padding">
                     <div class="col-6 f-row-label">{{ column.label }}</div>

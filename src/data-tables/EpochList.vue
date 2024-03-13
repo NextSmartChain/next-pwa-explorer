@@ -28,6 +28,7 @@
                     </template>
                 </template>
 
+              <!-- eslint-disable-next-line vue/no-unused-vars -->
                 <template v-slot:column-fee="{ value, item, column }">
                     <div v-if="column" class="row no-collapse no-vert-col-padding">
                         <div class="col-4 f-row-label">{{ column.label }}</div>

@@ -1,8 +1,8 @@
 <template>
     <header class="f-header" :class="cCssClass">
-        <div class="narrow-container">
+        <div class="narrow-container ">
             <div class="row no-collapse align-items-center">
-                <div class="col-2">
+                <div >
                     <router-link to="/" class="logo"  :aria-label="$t('view_home.back_to_home')"><img src="img/next-logo.png" srcset="img/next-logo@2x.png 2x" alt="" class="not-fluid" style="margin-top: 8px"></router-link>
                 </div>
                 <div class="col right-col">

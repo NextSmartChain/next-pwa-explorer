@@ -4,7 +4,7 @@
             <div class="row align-items-center">
                 <div class="col align-center-sm"><f-social-media-links></f-social-media-links></div>
                 <div class="col align-center-sm align-end">
-                    <a href="https://next.foundation/" target="_blank" rel="nofollow">©2022 NEXT Foundation</a>
+                    <a href="https://mach5.ag/" target="_blank" rel="nofollow">©2024 Mach5 A.G.</a>
                 </div>
             </div>
         </div>

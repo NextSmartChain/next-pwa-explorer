@@ -13,6 +13,7 @@
                 class="f-data-table-body-bg-color"
                 @fetch-more="fetchMore"
             >
+              <!-- eslint-disable-next-line vue/no-unused-vars -->
                 <template v-slot:column-validator="{ value, item, column }">
                     <div v-if="column" class="row no-collapse no-vert-col-padding">
                         <div class="col-5 f-row-label">{{ column.label }}</div>
@@ -28,7 +29,7 @@
                         {{ value.id | formatHexToInt }}
                     </template>
                 </template>
-
+              <!-- eslint-disable-next-line vue/no-unused-vars -->
                 <template v-slot:column-amount="{ value, item, column }">
                     <div v-if="column" class="row no-collapse no-vert-col-padding">
                         <div class="col-5 f-row-label">{{ column.label }}</div>
@@ -50,7 +51,7 @@
                         />
                     </template>
                 </template>
-
+              <!-- eslint-disable-next-line vue/no-unused-vars -->
                 <template v-slot:column-rewards="{ value, item, column }">
                     <div v-if="column" class="row no-collapse no-vert-col-padding">
                         <div class="col-5 f-row-label">{{ column.label }}</div>

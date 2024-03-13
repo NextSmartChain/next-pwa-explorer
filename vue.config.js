@@ -39,6 +39,8 @@ module.exports = {
         }
     },
 
+
+
     chainWebpack: config => {
 
         // sets page title
@@ -81,5 +83,13 @@ module.exports = {
             config.plugins.delete('workbox')
         }
 
-    }
+        // Add webpack resolve fallbacks
+        config.resolve.fallback = {
+            "http": false,
+            "https": false,
+            "zlib": false
+        };
+
+    },
+
 };

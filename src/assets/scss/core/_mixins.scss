@@ -54,12 +54,12 @@
     @include wrap-content($_flexbox, $_numCols != 12) {
         @for $i from 1 to $_numCols {
             .col-#{$i} {
-                flex: 0 0 #{($i / $_numCols) * 100 + '%'};
-                max-width: #{($i / $_numCols) * 100 + '%'};
+                flex: 0 0 calc(($i / $_numCols) * 100%);
+                max-width: calc(($i / $_numCols) * 100%);
             }
 
             .offset-#{$i} {
-                margin-inline-start: #{($i / $_numCols) * 100 + '%'};
+                margin-inline-start: calc(($i / $_numCols) * 100%);
             }
         }
 
@@ -75,12 +75,12 @@
         @include wrap-content($_flexbox, $_numCols != 12) {
             @for $i from 1 through $_numCols {
                 .col-#{$i}-lg {
-                    flex: 0 0 #{($i / $_numCols) * 100 + '%'};
-                    max-width: #{($i / $_numCols) * 100 + '%'};
+                    flex: 0 0 calc(($i / $_numCols) * 100%);
+                    max-width: calc(($i / $_numCols) * 100%);
                 }
 
                 .offset-#{$i}-lg {
-                    margin-inline-start: #{($i / $_numCols) * 100 + '%'};
+                    margin-inline-start: calc(($i / $_numCols) * 100%);
                 }
             }
         }
@@ -90,12 +90,12 @@
         @include wrap-content($_flexbox, $_numCols != 12) {
             @for $i from 1 through $_numCols {
                 .col-#{$i}-md {
-                    flex: 0 0 #{($i / $_numCols) * 100 + '%'};
-                    max-width: #{($i / $_numCols) * 100 + '%'};
+                    flex: 0 0 calc(($i / $_numCols) * 100%);
+                    max-width: calc(($i / $_numCols) * 100%);
                 }
 
                 .offset-#{$i}-md {
-                    margin-inline-start: #{($i / $_numCols) * 100 + '%'};
+                    margin-inline-start: calc(($i / $_numCols) * 100%);
                 }
             }
         }
@@ -105,12 +105,12 @@
         @include wrap-content($_flexbox, $_numCols != 12) {
             @for $i from 1 through $_numCols {
                 .col-#{$i}-sm {
-                    flex: 0 0 #{($i / $_numCols) * 100 + '%'};
-                    max-width: #{($i / $_numCols) * 100 + '%'};
+                    flex: 0 0 calc(($i / $_numCols) * 100%);
+                    max-width: calc(($i / $_numCols) * 100%);
                 }
 
                 .offset-#{$i}-sm {
-                    margin-inline-start: #{($i / $_numCols) * 100 + '%'};
+                    margin-inline-start: calc(($i / $_numCols) * 100%);
                 }
             }
         }
@@ -135,8 +135,8 @@ $grid-rows-selector: '.row, [class^="row-"], [class*=" row-"]';
     @for $i from 1 through $_numCols {
         .row-#{$i}-cols#{$_bp} > .col {
             //@include grid-cols('> ') {
-                flex: 0 0 #{(($_numCols / $i) / $_numCols) * 100 + '%'};
-                max-width: #{(($_numCols / $i) / $_numCols) * 100 + '%'};
+                flex: 0 0 calc((($_numCols / $i) / $_numCols) * 100%);
+                max-width: calc((($_numCols / $i) / $_numCols) * 100%);
             //}
         }
     }

@@ -6,6 +6,7 @@
             first-m-v-column-width="6"
             class="f-data-table-body-bg-color"
         >
+          <!-- eslint-disable-next-line vue/no-unused-vars -->
             <template v-slot:column-asset="{ value, item, column }">
                 <div v-if="column" class="row no-collapse no-vert-col-padding">
                     <div class="col-6 f-row-label">{{ column.label }}</div>
@@ -143,13 +144,14 @@ export default {
 
     methods: {
         async init() {
-            const { $defi } = this;
-            const result = await Promise.all([
-                $defi.fetchTokens(),
-                $defi.init(),
-            ]);
+          // TODO: The DeFiTokens are not on NextSmartChain, so it's commented
+            //const { $defi } = this;
+            //const result = await Promise.all([
+                //$defi.fetchTokens(),
+              //  $defi.init(),
+           // ]);
 
-            this.tokens = result[0].filter((_item) => _item.isActive && _item.symbol !== 'NEXT');
+            //this.tokens = result[0].filter((_item) => _item.isActive && _item.symbol !== 'NEXT');
 
             this.$emit('records-count', this.tokens.length);
         },

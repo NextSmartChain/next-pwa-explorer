@@ -47,7 +47,7 @@
                     </template>
                 </template>
 
-
+              <!-- eslint-disable-next-line vue/no-unused-vars -->
                 <template v-slot:column-stakerAddress="{ value, item, column }">
                     <div v-if="column" class="row no-collapse no-vert-col-padding">
                         <div class="col-6 f-row-label">{{ column.label }}</div>
