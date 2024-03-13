@@ -264,7 +264,7 @@
 	},
 	"view_validators_info": {
 		"current_reward_rate": "Current Reward Rate",
-		"daily_rewards": "Daily Rewards",
+		"daily_rewards": "Max Daily Rewards",
 		"duration": "Duration",
 		"end_time": "End Time",
 		"epoch_number": "Epoch Number",
