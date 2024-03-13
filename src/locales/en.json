@@ -1,0 +1,280 @@
+{
+	"address": "Address",
+	"alert": "Alert",
+	"alerts": {
+		"bad_search_string": "Invalid address, block number, or transaction hash. Please enter a valid address, block number, or transaction hash."
+	},
+	"amount": "Amount",
+	"approval": "Approval",
+	"approval_for_all": "Approval for all",
+	"asset": "Asset",
+	"assets": "Assets",
+	"back_to_home": "Back to home",
+	"block": "Block",
+	"burn": "Burn",
+	"contract": "Contract",
+	"copied_to_clipboard": "{what} copied to clipboard",
+	"copied_to_clipboard_warning": "Warning: Use this address to receive NEXT only. If you are receiving NEXT-ERC20 you need to use a different address!",
+	"copy_to_clipboard": "Copy {what} to clipboard",
+	"created_on": "Created On",
+	"delegation_list_dt": {
+		"address": "@:address",
+		"amount": "Amount (NEXT)",
+		"created_epoch": "Created on Epoch",
+		"created_on": "@:created_on"
+	},
+	"epoch": {
+		"detail_title": "Epoch Detail",
+		"end_time": "End Time",
+		"epoch": "Epoch",
+		"list_title": "Epochs",
+		"total_base_reward": "Total Base Reward",
+		"total_fee": "Total Fee",
+		"total_tx_reward": "Total Tx Reward"
+	},
+	"error": "Error",
+	"fee": "Fee",
+	"from": "From",
+	"gas_used": "Gas Used",
+	"hash": "Hash",
+	"loading": "Loading...",
+	"maximum_allowed_characters_length": "Maximum allowed length is {len} characters",
+	"mint": "Mint",
+	"name": "Name",
+	"navigation": [
+		{
+			"title": "Home",
+			"url": "/"
+		},
+		{
+			"title": "Transactions",
+			"url": "/transactions"
+		},
+		{
+			"title": "Blocks",
+			"url": "/blocks"
+		},
+		{
+			"title": "Epochs",
+			"url": "/epochs"
+		},
+		{
+			"title": "Staking",
+			"url": "/staking"
+		},
+		{
+			"title": "Assets",
+			"url": "/assets"
+		},
+		{
+			"title": "Contracts",
+			"url": "/contracts"
+		},
+		{
+			"title": "Wallet",
+			"url": "https://wallet.nextsmartchain.com/#/"
+		}
+	],
+	"no": "No",
+	"no_items": "No items.",
+	"optional": "Optional",
+	"other": "Other",
+	"pending": "Pending",
+	"required_field": "This field is required",
+	"source_code": "Source Code",
+	"success": "Success",
+	"time": "Time",
+	"timestamp": "Timestamp",
+	"to": "To",
+	"token": "Token",
+	"token_id": "Token Id",
+	"transactions": "Transactions",
+	"transfer": "Transfer",
+	"unknown": "Unknown",
+	"validate_contract_form": {
+		"name": "@:name",
+		"source_code": "@:source_code",
+		"support_contact": "@:view_contract_detail.support_contact",
+		"validate": "@:view_contract_detail.validate",
+		"validate_contract": "@:view_contract_detail.validate_contract",
+		"version": "@:version"
+	},
+	"validator": "Validator",
+	"validators": "Validators",
+	"version": "Version",
+	"view_address_detail": {
+		"asset": "@:asset",
+		"assets": "@:assets",
+		"available": "Available",
+		"balance": "Total Balance",
+		"claimed_rewards": "Claimed Rewards",
+		"delegated": "Delegated",
+		"delegations": "Delegations",
+		"erc1155_transactions": "NSC1155 Txns",
+		"erc20_transactions": "NSC20 Txns",
+		"erc721_transactions": "NSC721 Txns",
+		"pending_rewards": "Pending Rewards",
+		"staking": "Staking",
+		"stashed_rewards": "Stashed Rewards",
+		"title": "Address",
+		"transactions": "@:transactions",
+		"value_in_ftm": "Value in NEXT",
+		"value_in_usd": "Value in USD"
+	},
+	"view_assets": {
+		"all_erc20_tokens": "All NSC20 Tokens",
+		"asset": "@:asset",
+		"contract": "@:contract",
+		"decimals": "decimals",
+		"hash": "@:hash",
+		"market_cap": "Market Cap",
+		"name": "@:name",
+		"next_finance_assets": "NEXT Finance Assets",
+		"price": "Price",
+		"symbol": "Symbol",
+		"title": "@:assets",
+		"title_detail": "Asset detail",
+		"total_supply": "Total supply"
+	},
+	"view_block_detail": {
+		"block": "@:block",
+		"block_hash": "Block Hash",
+		"block_not_found": "Block not found",
+		"block_transactions": "@:transactions",
+		"parent_hash": "Parent Hash",
+		"timestamp": "@:timestamp",
+		"title": "Block detail",
+		"transactions": "@:transactions",
+		"transactions_in_block": "transactions in block"
+	},
+	"view_block_list": {
+		"age": "Age",
+		"block": "@:block",
+		"fee": "@:fee",
+		"time": "@:time",
+		"title": "Blocks",
+		"transaction_count": "Txns"
+	},
+	"view_contract_detail": {
+		"abi": "ABI",
+		"compiler": "Compiler",
+		"creator": "Creator",
+		"deployed": "Deployed",
+		"name": "@:name",
+		"source_code": "@:source_code",
+		"support_contact": "Support Contact",
+		"transactions": "@:transactions",
+		"validate": "Validate",
+		"validate_contract": "Validate Contract",
+		"validated": "Validated",
+		"version": "@:version"
+	},
+	"view_contract_list": {
+		"address": "@:address",
+		"compiler": "Compiler",
+		"name": "@:name",
+		"timestamp": "Timestamp",
+		"title": "Contracts",
+		"validated": "Validated",
+		"version": "@:version"
+	},
+	"view_home": {
+		"accounts": "Accounts",
+		"back_to_home": "@:back_to_home",
+		"blocks": "Blocks",
+		"search_button_label": "Search",
+		"search_input_placeholder": "Search by addresses, transactions, and blocks",
+		"title": "Home",
+		"transactions": "@:transactions",
+		"validators": "@:validators"
+	},
+	"view_not_found": {
+		"link_title": "@:back_to_home",
+		"text": "Looks like you've followed a broken link or entered a URL that doesn't exist on this site.",
+		"text2": "We recently redesigned the official explorer, so please ensure any links using the old structure are updated.",
+		"title": "Page not found"
+	},
+	"view_transaction_detail": {
+		"amount": "@:amount",
+		"block": "@:block",
+		"fee": "@:fee",
+		"from": "@:from",
+		"gas_limit": "Gas Limit",
+		"gas_price": "Gas Price",
+		"gas_used": "@:gas_used",
+		"hash": "@:hash",
+		"input_data": "Input Data",
+		"nonce": "Nonce",
+		"status": "Status",
+		"time": "@:time",
+		"title": "Transaction detail",
+		"to": "@:to",
+		"token_txs": "Nested token transactions",
+		"transaction_fee": "Transaction Fee",
+		"transaction_not_found": "Transaction not found"
+	},
+	"view_transaction_list": {
+		"address": "@:address",
+		"amount": "@:amount",
+		"block": "@:block",
+		"fee": "@:fee",
+		"from": "@:from",
+		"gas_used": "@:gas_used",
+		"time": "@:time",
+		"title": "Transactions",
+		"to": "@:to",
+		"tx_hash": "TX Hash"
+	},
+	"view_validator_detail": {
+		"active": "Active",
+		"address": "Delegate address",
+		"amount_delegated": "Amount delegated",
+		"amount_staked": "Amount staked",
+		"delegations": "Delegations",
+		"downtime": "Downtime",
+		"lock_days": "Lock (Days)",
+		"locked_until": "Locked Until",
+		"name": "@:name",
+		"online": "Online",
+		"staking_total": "Staking total",
+		"start_epoch": "Staking start epoch",
+		"start_time": "Staking start time",
+		"title": "Validator detail",
+		"validating_power": "Validating power",
+		"validator_id": "Validator ID"
+	},
+	"view_validator_list": {
+		"address": "@:address",
+		"created_on": "@:created_on",
+		"delegated": "Delegated (NEXT)",
+		"downtime": "Downtime",
+		"flagged": "Flagged",
+		"id": "ID",
+		"inactive": "Inactive",
+		"link": "Link",
+		"logo": "Logo",
+		"name": "@:name",
+		"offline": "Offline",
+		"poi": "Proof of Importance",
+		"self_staked": "Self-Staked (NEXT)",
+		"title": "Staking",
+		"total_staked": "Total Staked (NEXT)",
+		"unknown": "@:unknown",
+		"validators": "@:validators"
+	},
+	"view_validators_info": {
+		"current_reward_rate": "Current Reward Rate",
+		"daily_rewards": "Daily Rewards",
+		"duration": "Duration",
+		"end_time": "End Time",
+		"epoch_number": "Epoch Number",
+		"fee": "@:fee",
+		"last_epoch": "Last Epoch",
+		"staking_summary": "Staking Summary",
+		"total_delegated": "Total Delegated",
+		"total_self_staked": "Total Self-Staked",
+		"total_staked": "Total Staked",
+		"total_supply": "Total Supply"
+	},
+	"yes": "Yes"
+}

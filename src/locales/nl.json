@@ -1,0 +1,280 @@
+{
+	"address": "Adres",
+	"alert": "Waarschuwing",
+	"alerts": {
+		"bad_search_string": "Ongeldig adres, bloknummer of transactiehash. Voer een geldig adres, bloknummer of transactiehash in."
+	},
+	"amount": "Bedrag",
+	"approval": "Goedkeuring",
+	"approval_for_all": "Goedkeuring voor alle",
+	"asset": "Activa",
+	"assets": "Activa",
+	"back_to_home": "Terug naar huis",
+	"block": "Blok",
+	"burn": "Brandwond",
+	"contract": "Contract",
+	"copied_to_clipboard": "{what} gekopieerd naar klembord",
+	"copied_to_clipboard_warning": "Waarschuwing: Gebruik dit adres alleen om NEXT te ontvangen. Als u NEXT-ERC20 ontvangt, moet u een ander adres gebruiken!",
+	"copy_to_clipboard": "Kopieer {what} naar klembord",
+	"created_on": "gemaakt op",
+	"delegation_list_dt": {
+		"address": "@:address",
+		"amount": "Bedrag (NEXT)",
+		"created_epoch": "Gemaakt op Epoch",
+		"created_on": "@:created_on"
+	},
+	"epoch": {
+		"detail_title": "Epoch Detail",
+		"end_time": "Eindtijd",
+		"epoch": "Epoch",
+		"list_title": "Tijdperken",
+		"total_base_reward": "Totale Basis Beloning",
+		"total_fee": "Totaal Honorarium",
+		"total_tx_reward": "Totaal Tx Beloning"
+	},
+	"error": "Fout",
+	"fee": "Vergoeding",
+	"from": "van",
+	"gas_used": "Gebruikt gas",
+	"hash": "Hash",
+	"loading": "Laden...",
+	"maximum_allowed_characters_length": "Maximaal toegestane lengte is {len} tekens",
+	"mint": "Mint",
+	"name": "Naam",
+	"navigation": [
+		{
+			"title": "Home",
+			"url": "/"
+		},
+		{
+			"title": "transacties",
+			"url": "/transacties"
+		},
+		{
+			"title": "blokken",
+			"url": "/blokken"
+		},
+		{
+			"title": "Tijdperken",
+			"url": "/epochs"
+		},
+		{
+			"title": "staking",
+			"url": "/staking"
+		},
+		{
+			"title": "Activa",
+			"url": "/activa"
+		},
+		{
+			"title": "Contracten",
+			"url": "/contracten"
+		},
+		{
+			"title": "Portemonnee",
+			"url": "https://wallet.nextsmartchain.com/#/"
+		}
+	],
+	"no": "GEEN",
+	"no_items": "Geen items.",
+	"optional": "Optioneel",
+	"other": "Andere",
+	"pending": "in afwachting van",
+	"required_field": "dit veld is verplicht",
+	"source_code": "Broncode",
+	"success": "succes",
+	"time": "Tijd",
+	"timestamp": "tijdstempel",
+	"to": "Naar",
+	"token": "Penning",
+	"token_id": "Token ID",
+	"transactions": "transacties",
+	"transfer": "OVERDRACHT",
+	"unknown": "Onbekend",
+	"validate_contract_form": {
+		"name": "@:name",
+		"source_code": "@:source_code",
+		"support_contact": "@:view_contract_detail.support_contact",
+		"validate": "@:view_contract_detail.validate",
+		"validate_contract": "@:view_contract_detail.validate_contract",
+		"version": "@:version"
+	},
+	"validator": "Validator",
+	"validators": "Validatoren",
+	"version": "Versie",
+	"view_address_detail": {
+		"asset": "@:asset",
+		"assets": "@:assets",
+		"available": "Beschikbaar op",
+		"balance": "Totaal Saldo",
+		"claimed_rewards": "Opgeëiste beloningen",
+		"delegated": "Gedelegeerd",
+		"delegations": "Delegaties",
+		"erc1155_transactions": "NSC1155 Txns",
+		"erc20_transactions": "NSC20 Txns",
+		"erc721_transactions": "NSC721 Txns",
+		"pending_rewards": "In afwachting van beloningen",
+		"staking": "staking",
+		"stashed_rewards": "Opgeslagen beloningen",
+		"title": "Adres",
+		"transactions": "@:transactions",
+		"value_in_ftm": "Waarde in VOLGENDE",
+		"value_in_usd": "Waarde in USD"
+	},
+	"view_assets": {
+		"all_erc20_tokens": "Alle NSC20 Tokens",
+		"asset": "@:asset",
+		"contract": "@:contract",
+		"decimals": "Decimalen",
+		"hash": "@:hash",
+		"market_cap": "Marktkapitalisatie",
+		"name": "@:name",
+		"next_finance_assets": "NEXT Finance Activa",
+		"price": "Prijs",
+		"symbol": "Symbool",
+		"title": "@:assets",
+		"title_detail": "Detail activa",
+		"total_supply": "Totaal aanbod"
+	},
+	"view_block_detail": {
+		"block": "@:block",
+		"block_hash": "Blok Hash",
+		"block_not_found": "Blok niet gevonden",
+		"block_transactions": "@:transactions",
+		"parent_hash": "Ouder hash",
+		"timestamp": "@:timestamp",
+		"title": "Blok detail",
+		"transactions": "@:transactions",
+		"transactions_in_block": "transacties in blok"
+	},
+	"view_block_list": {
+		"age": "Leeftijd",
+		"block": "@:block",
+		"fee": "@:fee",
+		"time": "@:time",
+		"title": "blokken",
+		"transaction_count": "Txns"
+	},
+	"view_contract_detail": {
+		"abi": "ABI",
+		"compiler": "Compiler",
+		"creator": "Schepper",
+		"deployed": "Ingezet",
+		"name": "@:name",
+		"source_code": "@:source_code",
+		"support_contact": "Contact voor ondersteuning",
+		"transactions": "@:transactions",
+		"validate": "VALIDEREN",
+		"validate_contract": "Contract valideren",
+		"validated": "gevalideerd",
+		"version": "@:version"
+	},
+	"view_contract_list": {
+		"address": "@:address",
+		"compiler": "Compiler",
+		"name": "@:name",
+		"timestamp": "tijdstempel",
+		"title": "Contracten",
+		"validated": "gevalideerd",
+		"version": "@:version"
+	},
+	"view_home": {
+		"accounts": "Rekeningen",
+		"back_to_home": "@:back_to_home",
+		"blocks": "blokken",
+		"search_button_label": "Zoeken op",
+		"search_input_placeholder": "Zoeken op adressen, transacties en blokken",
+		"title": "Home",
+		"transactions": "@:transactions",
+		"validators": "@:validators"
+	},
+	"view_not_found": {
+		"link_title": "@:back_to_home",
+		"text": "Het lijkt erop dat je een gebroken link hebt gevolgd of een URL hebt ingevoerd die niet bestaat op deze site.",
+		"text2": "We hebben onlangs de officiële verkenner opnieuw ontworpen, dus zorg ervoor dat alle links die de oude structuur gebruiken, worden bijgewerkt.",
+		"title": "Pagina niet gevonden"
+	},
+	"view_transaction_detail": {
+		"amount": "@:amount",
+		"block": "@:block",
+		"fee": "@:fee",
+		"from": "@:from",
+		"gas_limit": "Gas limiet",
+		"gas_price": "Gasprijs",
+		"gas_used": "@:gas_used",
+		"hash": "@:hash",
+		"input_data": "Invoergegevens",
+		"nonce": "nonce",
+		"status": "Status ",
+		"time": "@:time",
+		"title": "Transactiegegevens",
+		"to": "@:to",
+		"token_txs": "Geneste token transacties",
+		"transaction_fee": "Transactievergoeding",
+		"transaction_not_found": "Transactie niet gevonden"
+	},
+	"view_transaction_list": {
+		"address": "@:address",
+		"amount": "@:amount",
+		"block": "@:block",
+		"fee": "@:fee",
+		"from": "@:from",
+		"gas_used": "@:gas_used",
+		"time": "@:time",
+		"title": "transacties",
+		"to": "@:to",
+		"tx_hash": "TX Hash"
+	},
+	"view_validator_detail": {
+		"active": "Actief",
+		"address": "Adres van de afgevaardigde",
+		"amount_delegated": "Gedelegeerd bedrag",
+		"amount_staked": "Ingezet bedrag",
+		"delegations": "Delegaties",
+		"downtime": "Downtime",
+		"lock_days": "Slot (Dagen)",
+		"locked_until": "Vergrendeld tot",
+		"name": "@:name",
+		"online": "online",
+		"staking_total": "Inzet totaal",
+		"start_epoch": "Staking start epoch",
+		"start_time": "Begintijd van de inzet",
+		"title": "Validator detail",
+		"validating_power": "Valideren van macht",
+		"validator_id": "Validator ID"
+	},
+	"view_validator_list": {
+		"address": "@:address",
+		"created_on": "@:created_on",
+		"delegated": "Gedelegeerd (NEXT)",
+		"downtime": "Downtime",
+		"flagged": "Gemarkeerd",
+		"id": "Id",
+		"inactive": "INACTIEF",
+		"link": "Link",
+		"logo": "LOGO",
+		"name": "@:name",
+		"offline": "offline",
+		"poi": "Bewijs van belang",
+		"self_staked": "Zelf gespijkerd (NEXT)",
+		"title": "staking",
+		"total_staked": "Totaal ingezet (NEXT)",
+		"unknown": "@:unknown",
+		"validators": "@:validators"
+	},
+	"view_validators_info": {
+		"current_reward_rate": "Huidig beloningspercentage",
+		"daily_rewards": "Dagelijkse beloningen",
+		"duration": "Duur",
+		"end_time": "Eindtijd",
+		"epoch_number": "Tijdperk Nummer",
+		"fee": "@:fee",
+		"last_epoch": "Laatste Epoch",
+		"staking_summary": "Staking Samenvatting",
+		"total_delegated": "Totaal Gedelegeerd",
+		"total_self_staked": "Totaal Zelf Gestoken",
+		"total_staked": "Totaal Uitgezet",
+		"total_supply": "Totaal aanbod"
+	},
+	"yes": "Ja"
+}
